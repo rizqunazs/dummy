@@ -27,23 +27,6 @@ Route::get('/dashboard', function () {
     return view('pages/dashboard');
 })->name('home');
 
-Route::group(['prefix' => 'project', 'as' => 'project.'], function () {
-    Route::get('/', 'ProjectController@index')->name('index');
-    Route::get('/view', 'ProjectController@view')->name('view');
-    Route::get('/create', 'ProjectController@create')->name('create');
-    Route::post('/store', 'ProjectController@store')->name('store');
-    Route::post('/upload/berkas', 'BerkasController@store')->name('berkas.store');
-});
-
-
-Route::group(['prefix' => 'master-data', 'as' => 'master.', 'namespace' => 'Master'], function () {
-    Route::resource('jenis-akta-ppat', 'JenisAktaPPATController');
-    Route::resource('kendaraan', 'KendaraanController');
-    // Route::resource('sertifikat', SertifikatController::class);
-    Route::resource('estimasi', 'EstimasiController');
-});
-
-
 
 
 /* Demo Page */
