@@ -13,156 +13,103 @@ return [
     |
     */
     'menu' => [
-        // [
-        //     'icon' => 'fa fa-th-large',
-        //     'title' => 'Demo',
-        //     'url' => '/dashboard/v2',
-        //     'caret' => false,
-        // ],
         [
             'icon' => 'fa fa-th-large',
             'title' => 'Dashboard',
             'url' => '/dashboard',
             'caret' => false
-        ], [
+        ],
+        [
+            'icon' => 'fa fa-file-alt',
+            'title' => 'SKCK',
+            'url' => '/skck',
+            'caret' => false
+        ],
+        [
+            'icon' => 'fa fa-id-card',
+            'title' => 'SIM',
+            'url' => '/#',
+            'caret' => false
+        ],
+        [
+            'icon' => 'fa fa-car',
+            'title' => 'Pengawalan',
+            'url' => '/#',
+            'caret' => false
+        ],
+        [
+            'icon' => 'fa fa-align-justify',
+            'title' => 'Perizinan',
+            'url' => 'javascript:;',
+            'caret' => true,
+            'sub_menu' => [[
+                'url' => '#',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Izin Keramaian'
+            ], [
+                'url' => '#',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Izin Demo'
+            ]]
+        ],
+        [
             'icon' => 'fa fa-list-alt',
-            'title' => 'Proyek',
+            'title' => 'Pengaduan',
             'url' => 'javascript:;',
             'caret' => true,
             'sub_menu' => [[
-                'url' => '/project/create',
-                'title' => 'Project Baru'
+                'url' => '#',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Aduan'
+            ],  [
+                'url' => '#',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Kehilangan Barang'
             ], [
-                'url' => '/project',
-                'title' => 'Semua Proyek'
+                'url' => '#',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Orang Asing'
+            ], [
+                'url' => '#',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Orang Hilang'
             ]]
-        ], [
-            'icon' => 'fa fa-money-bill-alt',
-            'title' => 'Accounting',
+        ],
+        // [
+        //     'icon' => 'fa fa-list-alt',
+        //     'title' => 'Permohonan',
+        //     'url' => 'javascript:;',
+        //     'caret' => true,
+        //     'sub_menu' => [
+        //         [
+        //             'url' => '#',
+        //             'title' => 'SKCK'
+        //         ], [
+        //             'url' => '#',
+        //             'title' => 'SIM'
+        //         ], [
+        //             'url' => '#',
+        //             'title' => 'Izin Keramaian'
+        //         ], [
+        //             'url' => '#',
+        //             'title' => 'Izin Demo'
+        //         ], [
+        //             'url' => '#',
+        //             'title' => 'Info Orang Asing'
+        //         ], [
+        //             'url' => '#',
+        //             'title' => 'Info Orang Hilang'
+        //         ], [
+        //             'url' => '#',
+        //             'title' => 'Pengawalan'
+        //         ]
+        //     ]
+        // ],
+        [
+            'icon' => 'fa fa-cogs',
+            'title' => 'Master',
             'url' => 'javascript:;',
             'caret' => true,
             'sub_menu' => [[
                 'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Akun Kas dan Bank'
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Users'
             ], [
                 'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Cash Register'
-            ], [
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Jurnal Umum'
-            ]]
-        ], [
-            'icon' => 'fa fa-envelope',
-            'title' => 'Surat Keluar Notaris (SKN)',
-            'url' => 'javascript:;',
-            'caret' => true,
-            'sub_menu' => [[
-                'url' => '/surat',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Surat Keluar Notaris'
-            ], [
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Segmen Surat Keluar'
-            ]]
-        ], [
-            'icon' => 'fas fa-calendar-check',
-            'title' => 'Agenda',
-            'url' => 'javascript:;',
-            'caret' => true,
-            'sub_menu' => [[
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Jadwal Akad Akta Notaris'
-            ], [
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Jadwal Akad PPAT'
-            ]]
-        ], [
-            'icon' => 'fa fa-th-large',
-            'title' => 'Akta PPAT dan Notaril',
-            'url' => 'javascript:;',
-            'caret' => true,
-            'sub_menu' => [[
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Informasi Objek'
-            ], [
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Akta Nomor PPAT'
-            ], [
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Akta Notaril'
-            ]]
-        ], [
-            'icon' => 'fa fa-th-large',
-            'title' => 'Proses Lain  dan Estimasi Pajak',
-            'url' => 'javascript:;',
-            'caret' => true,
-            'sub_menu' => [[
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Estimasi Pajak Titipan'
-            ], [
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Proses Lainnya'
-            ],]
-        ], [
-            'icon' => 'fa fa-th-large',
-            'title' => 'Operasional',
-            'url' => 'javascript:;',
-            'caret' => true,
-            'sub_menu' => [[
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Informasi Objek'
-            ], [
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Pembayaran Pajak Titipan'
-            ], [
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Biaya Operasional Proses Lainnya'
-            ],]
-        ], [
-            'icon' => 'fa fa-th-large',
-            'title' => 'Finance Control',
-            'url' => 'javascript:;',
-            'caret' => true,
-            'sub_menu' => [[
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Finance Control Pajak Titipan'
-            ], [
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Finance Control Proses Lainnya'
-            ],]
-        ],  [
-            'icon' => 'fa fa-align-left',
-            'title' => 'Setting',
-            'url' => 'javascript:;',
-            'caret' => true,
-            'sub_menu' => [[
-                'url' => 'javascript:;',
-                'title' => 'Master Data',
-                'sub_menu' => [[
-                    'icon' => 'fa fa-ellipsis-h',
-                    'url' => '/kendaraan',
-                    'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Kendaraan',
-                ], [
-                    'icon' => 'fa fa-ellipsis-h',
-                    'url' => '/sertifikat',
-                    'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Sertifikat'
-                ], [
-                    'icon' => 'fa fa-ellipsis-h',
-                    'url' => '/akta',
-                    'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Akta'
-                ], [
-                    'icon' => 'fa fa-ellipsis-h',
-                    'url' => '/estimasi',
-                    'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Estimasi'
-                ]]
-            ], [
-                'url' => 'javascript:;',
-                'title' => '<i class="fa fa-image"></i>&nbsp;Scan Berkas Klien'
-            ], [
-                'url' => 'javascript:;',
-                'title' => 'File Template Notaris'
-            ], [
-                'url' => 'javascript:;',
-                'title' => 'Users'
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Instansi'
             ]]
         ]
     ],
