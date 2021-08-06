@@ -30,6 +30,7 @@ Route::get('/dashboard', function () {
 
 Route::group(['prefix' => '/master-data', 'as' => 'master-data.', 'namespace' => 'Master'], function () {
     Route::resource('/agama', 'AgamaController');
+    Route::resource('/pekerjaan', 'PekerjaanController');
 });
 
 
