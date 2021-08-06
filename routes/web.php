@@ -28,6 +28,11 @@ Route::get('/dashboard', function () {
 })->name('home');
 
 
+Route::group(['prefix' => '/master-data', 'as' => 'master-data.', 'namespace' => 'Master'], function () {
+    Route::resource('/agama', 'AgamaController');
+});
+
+
 
 /* Demo Page */
 Route::get('/', function () {

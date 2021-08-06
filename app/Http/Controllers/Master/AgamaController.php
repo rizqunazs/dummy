@@ -1,0 +1,74 @@
+<?php
+
+namespace App\Http\Controllers\Master;
+
+use App\DataTables\Master\AgamaDataTable;
+use App\Http\Controllers\Controller;
+use App\Models\Agama;
+use Illuminate\Http\Request;
+
+class AgamaController extends Controller
+{
+    public function index(AgamaDataTable $dataTable)
+    {
+        return $dataTable->render('pages.master.agama.index');
+    }
+
+    public function create()
+    {
+        return view('pages.master.agama.add-edit');
+    }
+
+    public function store(Request $request)
+    {
+        try {
+            $request->validate([
+                'nama' => 'required|min:3'
+            ]);
+        } catch (\Throwable $th) {
+            return back()->withInput()->withToastError($th->validator->messages()->all()[0]);
+        }
+
+        try {
+            Agama::create($request->all());
+        } catch (\Throwable $th) {
+            return back()->withInput()->withToastError('Something went wrong');
+        }
+
+        return redirect(route('master-data.agama.index'))->withToastSuccess('Data tersimpan');
+    }
+
+    public function edit($id)
+    {
+        $data = Agama::findOrFail($id);
+        return view('pages.master.agama.add-edit', ['data' => $data]);
+    }
+
+    public function update(Request $request)
+    {
+        try {
+            $request->validate([
+                'nama' => 'required|min:3'
+            ]);
+        } catch (\Throwable $th) {
+            return back()->withInput()->withToastError($th->validator->messages()->all()[0]);
+        }
+
+        try {
+            Agama::create($request->all());
+        } catch (\Throwable $th) {
+            return back()->withInput()->withToastError('Something went wrong');
+        }
+
+        return redirect(route('master-data.agama.index'))->withToastSuccess('Data tersimpan');
+    }
+
+    public function destroy($id)
+    {
+        try {
+            Agama::find($id)->delete();
+        } catch (\Throwable $th) {
+            return response(['error' => 'Something went wrong']);
+        }
+    }
+}
