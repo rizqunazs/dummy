@@ -105,34 +105,34 @@ return [
             'url' => 'javascript:;',
             'caret' => true,
             'sub_menu' => [[
-                'url' => 'agama',
+                'url' => '/master-data/agama',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Agama'
             ],  [
-                'url' => 'pekerjaan',
+                'url' => '/master-data/pekerjaan',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Pekerjaan'
             ], [
-                'url' => 'status-kawin',
+                'url' => '/master-data/status-kawin',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Status Kawin'
             ], [
-                'url' => 'jenis-permohonan-sim',
+                'url' => '/master-data/jenis-permohonan-sim',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Jenis Permohonan SIM'
             ], [
-                'url' => 'golongan-sim',
+                'url' => '/master-data/golongan-sim',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Golongan SIM'
             ], [
-                'url' => 'pendidikan',
+                'url' => '/master-data/pendidikan',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Pendidikan'
             ], [
-                'url' => 'golongan-darah',
+                'url' => '/master-data/golongan-darah',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Golongan Darah'
             ], [
-                'url' => 'status-keluarga',
+                'url' => '/master-data/status-keluarga',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Status Keluarga'
             ], [
-                'url' => 'jenis-visa',
+                'url' => '/master-data/jenis-visa',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Jenis Visa'
             ], [
-                'url' => 'maksud-kunjungan-wna',
+                'url' => '/master-data/maksud-kunjungan-wna',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Maksud Kunjungan WNA'
             ]]
         ]
