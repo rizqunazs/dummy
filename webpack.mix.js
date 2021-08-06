@@ -23,6 +23,7 @@ mix.js('resources/js/jenisakta.js', 'public/assets/js/custom/');
 //radio-boxed
 mix.sass('resources/scss/radio-boxed.scss', 'public/assets/css/custom/');
 mix.js('resources/js/ajax-form-handler.js', 'public/assets/js/custom/');
+mix.js('resources/js/delete-with-confirmation.js', 'public/assets/js/custom/');
 /* end custom resources */
 
 // jquery-migrate

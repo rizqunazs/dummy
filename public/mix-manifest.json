@@ -4,6 +4,7 @@
     "/assets/js/custom/estimasi.js": "/assets/js/custom/estimasi.js",
     "/assets/js/custom/jenisakta.js": "/assets/js/custom/jenisakta.js",
     "/assets/js/custom/ajax-form-handler.js": "/assets/js/custom/ajax-form-handler.js",
+    "/assets/js/custom/delete-with-confirmation.js": "/assets/js/custom/delete-with-confirmation.js",
     "/assets/css/custom/radio-boxed.css": "/assets/css/custom/radio-boxed.css",
     "/assets/plugins/jquery-migrate/dist/.eslintrc.json": "/assets/plugins/jquery-migrate/dist/.eslintrc.json",
     "/assets/plugins/jquery-migrate/dist/jquery-migrate.js": "/assets/plugins/jquery-migrate/dist/jquery-migrate.js",
