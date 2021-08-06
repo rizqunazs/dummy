@@ -44,7 +44,7 @@ class AgamaController extends Controller
         return view('pages.master.agama.add-edit', ['data' => $data]);
     }
 
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {
         try {
             $request->validate([
@@ -55,7 +55,8 @@ class AgamaController extends Controller
         }
 
         try {
-            Agama::create($request->all());
+            $data = Agama::findOrFail($id);
+            $data->update($request->all());
         } catch (\Throwable $th) {
             return back()->withInput()->withToastError('Something went wrong');
         }

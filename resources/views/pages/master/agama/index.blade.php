@@ -72,42 +72,10 @@
 {{ $dataTable->scripts() }}
 <!-- end datatables -->
 
+<script src="{{ asset('assets/js/custom/delete-with-confirmation.js') }}"></script>
 <script>
-  $(document).ready(function() {
-    $.ajaxSetup({
-      headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-      }
-    });
-
+  $(document).on('delete-with-confirmation.success', function() {
+    $('.buttons-reload').trigger('click')
   })
-
-  $(document).on('click', '.buttons-delete', function(e) {
-    e.preventDefault();
-    let modal, url;
-    modal = $('#deleteModal');
-    url = $(e.target).closest('a').prop('href');
-
-    modal.modal('show')
-
-    $(modal).on('hidden.bs.modal', function() {
-      $(this).find('button#delete').off();
-    })
-
-    $(modal).find('button#delete')
-      .on('click', function(e) {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-        $.ajax({
-          method: 'delete',
-          url,
-          success: function() {
-            modal.modal('hide')
-            $('.buttons-reload').trigger('click')
-          }
-        })
-        $(this).off()
-      });
-  });
 </script>
 @endpush
