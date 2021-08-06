@@ -105,11 +105,35 @@ return [
             'url' => 'javascript:;',
             'caret' => true,
             'sub_menu' => [[
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Users'
+                'url' => 'agama',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Agama'
+            ],  [
+                'url' => 'pekerjaan',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Pekerjaan'
             ], [
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Instansi'
+                'url' => 'status-kawin',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Status Kawin'
+            ], [
+                'url' => 'jenis-permohonan-sim',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Jenis Permohonan SIM'
+            ], [
+                'url' => 'golongan-sim',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Golongan SIM'
+            ], [
+                'url' => 'pendidikan',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Pendidikan'
+            ], [
+                'url' => 'golongan-darah',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Golongan Darah'
+            ], [
+                'url' => 'status-keluarga',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Status Keluarga'
+            ], [
+                'url' => 'jenis-visa',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Jenis Visa'
+            ], [
+                'url' => 'maksud-kunjungan-wna',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Maksud Kunjungan WNA'
             ]]
         ]
     ],
