@@ -105,11 +105,35 @@ return [
             'url' => 'javascript:;',
             'caret' => true,
             'sub_menu' => [[
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Users'
+                'url' => '/master-data/agama',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Agama'
+            ],  [
+                'url' => '/master-data/pekerjaan',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Pekerjaan'
             ], [
-                'url' => '#',
-                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Instansi'
+                'url' => '/master-data/status-kawin',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Status Kawin'
+            ], [
+                'url' => '/master-data/jenis-permohonan-sim',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Jenis Permohonan SIM'
+            ], [
+                'url' => '/master-data/golongan-sim',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Golongan SIM'
+            ], [
+                'url' => '/master-data/pendidikan',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Pendidikan'
+            ], [
+                'url' => '/master-data/golongan-darah',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Golongan Darah'
+            ], [
+                'url' => '/master-data/status-keluarga',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Status Keluarga'
+            ], [
+                'url' => '/master-data/jenis-visa',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Jenis Visa'
+            ], [
+                'url' => '/master-data/maksud-kunjungan-wna',
+                'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Maksud Kunjungan WNA'
             ]]
         ]
     ],
