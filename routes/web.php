@@ -23,6 +23,8 @@ Route::get('/token', function () {
     return csrf_token();
 });
 
+Route::resource('/skck', 'SkckController');
+
 Route::get('/dashboard', function () {
     return view('pages/dashboard');
 })->name('home');
