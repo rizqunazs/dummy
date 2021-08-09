@@ -91,6 +91,6 @@ class StatusKawinDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'Master/StatusKawin_' . date('YmdHis');
+        return 'MasterStatusKawin_' . date('YmdHis');
     }
 }

@@ -91,6 +91,6 @@ class MaksudKunjunganWNADataTable extends DataTable
      */
     protected function filename()
     {
-        return 'Master/MaksudKunjunganWNA_' . date('YmdHis');
+        return 'MasterMaksudKunjunganWNA_' . date('YmdHis');
     }
 }

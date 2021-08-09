@@ -91,6 +91,6 @@ class PekerjaanDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'Master/Pekerjaan_' . date('YmdHis');
+        return 'MasterPekerjaan_' . date('YmdHis');
     }
 }

@@ -91,6 +91,6 @@ class GolonganDarahDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'Master/GolonganDarah_' . date('YmdHis');
+        return 'MasterGolonganDarah_' . date('YmdHis');
     }
 }

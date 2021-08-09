@@ -91,6 +91,6 @@ class PendidikanDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'Master/Pendidikan_' . date('YmdHis');
+        return 'MasterPendidikan_' . date('YmdHis');
     }
 }

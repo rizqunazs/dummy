@@ -91,6 +91,6 @@ class GolonganSIMDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'Master/GolonganSIM_' . date('YmdHis');
+        return 'MasterGolonganSIM_' . date('YmdHis');
     }
 }

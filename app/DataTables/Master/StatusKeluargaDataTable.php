@@ -91,6 +91,6 @@ class StatusKeluargaDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'Master/StatusKeluarga_' . date('YmdHis');
+        return 'MasterStatusKeluarga_' . date('YmdHis');
     }
 }

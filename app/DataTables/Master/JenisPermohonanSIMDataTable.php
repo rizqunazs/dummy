@@ -91,6 +91,6 @@ class JenisPermohonanSIMDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'Master/JenisPermohonanSIM_' . date('YmdHis');
+        return 'MasterJenisPermohonanSIM_' . date('YmdHis');
     }
 }

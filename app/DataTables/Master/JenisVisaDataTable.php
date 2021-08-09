@@ -91,6 +91,6 @@ class JenisVisaDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'Master/JenisVisa_' . date('YmdHis');
+        return 'MasterJenisVisa_' . date('YmdHis');
     }
 }

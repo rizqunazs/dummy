@@ -91,6 +91,6 @@ class AgamaDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'Master/Agama_' . date('YmdHis');
+        return 'MasterAgama_' . date('YmdHis');
     }
 }
