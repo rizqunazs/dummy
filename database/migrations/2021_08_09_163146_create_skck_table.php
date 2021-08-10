@@ -15,7 +15,7 @@ class CreateSKCKTable extends Migration
     {
         Schema::create('skck', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('pengajuan_id');
+            $table->bigInteger('permohonan_id');
             $table->string('no_skck')->nullable();
             $table->boolean('isApproved')->default(true);
             $table->text('alasan_ditolak')->nullable();

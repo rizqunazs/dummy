@@ -21,4 +21,9 @@ class SKCK extends Model
     {
         return $query->where('isApproved', false);
     }
+
+    public function permohonan()
+    {
+        return $this->hasOne(PermohonanSKCK::class, 'permohonan_id');
+    }
 }
