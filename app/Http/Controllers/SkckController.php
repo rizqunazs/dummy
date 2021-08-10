@@ -2,83 +2,112 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Skck;
+use App\Models\Pemohon;
+use App\Models\PermohonanSKCK;
+use App\Models\SKCK;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SkckController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         return view('pages.skck.index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        return view('pages.skck.create');
+        return view('pages.skck.add-edit');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        try {
+            $request->validate([
+                'no_skck' => 'required|array',
+                'keperluan' => 'required',
+                'nik' => 'required',
+                'fullname' => 'required',
+                'tempat_lahir' => 'required',
+                'tanggal_lahir' => 'required',
+                'alamat_rumah' => 'required',
+                'pekerjaan' => 'required',
+                'kota' => 'required',
+                'no_telp' => 'required',
+            ]);
+        } catch (\Throwable $th) {
+            return back()->withInput()->withToastError($th->validator->messages()->all()[0]);
+        }
+
+        DB::transaction(function () use ($request) {
+            try {
+                $permohonan = PermohonanSKCK::create([
+                    'keperluan' => $request->keperluan,
+                ]);
+
+                $permohonan->skck->create([
+                    'no_skck' => implode('-', $request->no_skck)
+                ]);
+
+                $permohonan->pemohon->create($request->all());
+            } catch (\Throwable $th) {
+                DB::rollBack();
+                return back()->withInput()->withToastError('Error saving data');
+            }
+        });
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Skck  $skck
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Skck $skck)
+    public function show($id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Skck  $skck
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Skck $skck)
+    public function edit($id)
     {
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Skck  $skck
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Skck $skck)
+
+    public function update(Request $request, $id)
     {
-        //
+        try {
+            $request->validate([
+                'no_skck' => 'required|array',
+                'keperluan' => 'required',
+                'nik' => 'required',
+                'fullname' => 'required',
+                'tempat_lahir' => 'required',
+                'tanggal_lahir' => 'required',
+                'alamat_rumah' => 'required',
+                'pekerjaan' => 'required',
+                'kota' => 'required',
+                'no_telp' => 'required',
+            ]);
+        } catch (\Throwable $th) {
+            return back()->withInput()->withToastError($th->validator->messages()->all()[0]);
+        }
+
+        DB::transaction(function () use ($request, $id) {
+            try {
+                $permohonan = PermohonanSKCK::findOrFail($id);
+                $permohonan->update([
+                    'keperluan' => $request->keperluan,
+                ]);
+
+                $permohonan->skck->update([
+                    'no_skck' => implode('-', $request->no_skck)
+                ]);
+
+                $permohonan->pemohon->update($request->all());
+            } catch (\Throwable $th) {
+                DB::rollBack();
+                return back()->withInput()->withToastError('Error saving data');
+            }
+        });
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Skck  $skck
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Skck $skck)
+
+    public function destroy($id)
     {
         //
     }
