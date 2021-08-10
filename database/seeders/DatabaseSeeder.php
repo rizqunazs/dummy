@@ -13,15 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
         $this->call([
-            AdminSeeder::class,
-            JenisFormSeeder::class,
-            JenisSertifikatSeeder::class,
-            JenisAktaNotarilSeeder::class,
-            JenisAktaPPATSeeder::class,
-            JenisEstimasiSeeder::class,
-            JenisKendaraanSeeder::class,
+            IndoRegionSeeder::class
         ]);
     }
 }
