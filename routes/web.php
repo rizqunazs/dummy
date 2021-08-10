@@ -24,6 +24,7 @@ Route::get('/token', function () {
 });
 
 Route::resource('/skck', 'SkckController');
+Route::resource('/user', 'UserController');
 
 Route::get('/dashboard', function () {
     return view('pages/dashboard');

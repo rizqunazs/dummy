@@ -100,6 +100,12 @@ return [
         //     ]
         // ],
         [
+            'icon' => 'fa fa-users',
+            'title' => 'Pengguna',
+            'url' => '/user',
+            'caret' => false,
+        ],
+        [
             'icon' => 'fa fa-cogs',
             'title' => 'Master',
             'url' => 'javascript:;',
