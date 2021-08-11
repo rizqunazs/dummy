@@ -10,6 +10,8 @@
     <li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
     <li class="breadcrumb-item"><a href="#">SKCK</a></li>
     <li class="breadcrumb-item active">Form Permohonan</li>
+    <li class="breadcrumb-item "><a href="javascript:history.back(-1);"
+            class="btn btn-sm btn-primary m-b-10 text-white"><i class="fa fa-list "></i> &nbsp; List Data</a></li>
 </ol>
 <!-- end breadcrumb -->
 <!-- begin page-header -->
