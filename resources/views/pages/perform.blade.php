@@ -37,8 +37,10 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col-md-4">
-                                    <div class="input-group mb-3">
+
+                                    <div class="input-group">
                                         <div class="input-group-append">
                                             <div class="input-group-text">Layanan</div>
                                         </div>
@@ -48,6 +50,7 @@
                                             <option value="skck">SKCK</option>
                                             <option value="skck">SKCK</option>
                                         </select>
+
                                     </div>
                                 </div>
                                 <div class="col-md-2">

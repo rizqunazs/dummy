@@ -46,8 +46,6 @@ $contentClass .= (!empty($contentInverseMode)) ? 'content-inverse-mode ' : '';
 
 		@includeWhen($footer, 'includes.footer')
 
-		@include('includes.component.delete-confirmation')
-
 		@include('includes.component.scroll-top-btn')
 
 	</div>

@@ -23,10 +23,25 @@ Route::get('/token', function () {
     return csrf_token();
 });
 
+Route::resource('/skck', 'SkckController');
+Route::resource('/user', 'UserController');
+
 Route::get('/dashboard', function () {
     return view('pages/dashboard');
 })->name('home');
 
+Route::group(['prefix' => '/master-data', 'as' => 'master-data.', 'namespace' => 'Master'], function () {
+    Route::resource('agama', 'AgamaController');
+    Route::resource('pekerjaan', 'PekerjaanController');
+    Route::resource('status-kawin', 'StatusKawinController');
+    Route::resource('jenis-permohonan-sim', 'JenisPermohonanSIMController');
+    Route::resource('golongan-sim', 'GolonganSIMController');
+    Route::resource('pendidikan', 'PendidikanController');
+    Route::resource('golongan-darah', 'GolonganDarahController');
+    Route::resource('status-keluarga', 'StatusKeluargaController');
+    Route::resource('jenis-visa', 'JenisVisaController');
+    Route::resource('maksud-kunjungan-wna', 'MaksudKunjunganWNAController');
+});
 
 
 /* Demo Page */
