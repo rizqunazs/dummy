@@ -16,9 +16,9 @@
 <h1 class="page-header">@yield('title') <small>SKCK</small></h1>
 <!-- end page-header -->
 <div class="row">
-    <div class="col-xl-8">
+    <div class="col-xl-8 ui-sortable">
         <!-- begin panel -->
-        <div class="panel panel-inverse">
+        <div class="panel panel-inverse" data-sortable-id="index-1">
             <!-- begin panel-heading -->
             <div class="panel-heading">
                 <h4 class="panel-title">Data @yield('title') SKCK</h4>
@@ -881,9 +881,9 @@
         <!-- end panel -->
     </div>
 
-    <div class="col-xl-4">
+    <div class="col-xl-4 ui-sortable">
         <!-- begin panel -->
-        <div class="panel panel-inverse" data-sortable-id="form-plugins-5">
+        <div class="panel panel-inverse" data-sortable-id="index-2">
             <!-- begin panel-heading -->
             <div class="panel-heading">
                 <h4 class="panel-title">Lampiran Berkas</h4>
@@ -1017,15 +1017,14 @@
                     </table>
                 </div>
                 <!-- end table-responsive -->
+                <button class="btn btn-block btn-primary">Terima</button>
             </div>
             <!-- end panel-body -->
         </div>
         <!-- end panel -->
-        </hr>
-        <button class="btn btn-block btn-primary">Terima</button>
     </div>
     <div class="col-xl-4">
-        <div class="panel panel-inverse" data-sortable-id="form-plugins-5">
+        <div class="panel panel-inverse" data-sortable-id="index-3">
             <!-- begin panel-heading -->
             <div class="panel-heading">
                 <h4 class="panel-title">Lampiran Berkas</h4>
@@ -1043,7 +1042,7 @@
             <!-- end panel-heading -->
             <!-- begin panel-body -->
             <div class="panel-body">
-            
+
             </div>
         </div>
     </div>
