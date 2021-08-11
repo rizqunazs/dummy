@@ -1042,8 +1042,24 @@
             <!-- end panel-heading -->
             <!-- begin panel-body -->
             <div class="panel-body">
-
+                <div class="col-md-12 mb-2">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="/assets/img/no_image.png" alt="KTP">
+                        <div class="card-footer text-center">
+                            <h5><b>Kartu Tanda Penduduk</b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-1">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="/assets/img/no_image.png" alt="Kartu Keluarga">
+                        <div class="card-footer text-center">
+                            <h4><b>Kartu Keluarga</b></h4>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- end panel-body -->
         </div>
     </div>
 </div>
