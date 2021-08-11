@@ -21,7 +21,17 @@ class SKCKDataTable extends DataTable
     {
         return datatables()
             ->eloquent($query)
-            ->addColumn('action', 'skck.action');
+            ->setRowId(function ($row) {
+                return $row->id;
+            })
+            ->addColumn('action', function ($row) {
+                $btn = '<div class="btn-group">';
+                $btn = $btn . '<a href="' . route('skck.edit', $row->id) . '" class="btn btn-dark buttons-edit"><i class="fas fa-edit"></i></a>';
+                $btn = $btn . '<a href="' . route('skck.destroy', $row->id) . '" class="btn btn-danger buttons-delete"><i class="fas fa-trash fa-fw"></i></a>';
+                $btn = $btn . '</div>';
+
+                return $btn;
+            });
     }
 
     /**
@@ -71,7 +81,7 @@ class SKCKDataTable extends DataTable
                 ->width(60)
                 ->addClass('text-center'),
             Column::make('id'),
-            Column::make('add your columns'),
+            Column::make('keperluan'),
             Column::make('created_at'),
             Column::make('updated_at'),
         ];
