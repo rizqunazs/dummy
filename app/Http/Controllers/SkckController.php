@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\DataTables\SKCKDataTable;
 use App\Models\Pemohon;
 use App\Models\PermohonanSKCK;
 use App\Models\SKCK;
@@ -10,9 +11,9 @@ use Illuminate\Support\Facades\DB;
 
 class SkckController extends Controller
 {
-    public function index()
+    public function index(SKCKDataTable $datatable)
     {
-        return view('pages.skck.index');
+        return $datatable->render('pages.skck.index');
     }
 
     public function create()
