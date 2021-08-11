@@ -11,12 +11,12 @@ class KehilanganController extends Controller
 
     public function index(KehilanganDataTable $datatable)
     {
-        return $datatable->render('pages.spkt.kehilangan');
+        return $datatable->render('pages.spkt.kehilangan.index');
     }
 
     public function create()
     {
-        return view('pages.spkt.add-edit');
+        return view('pages.spkt.kehilangan.add-edit');
     }
 
     public function store(Request $request)
