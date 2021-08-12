@@ -1025,8 +1025,8 @@
         </div>
         <!-- end panel -->
     </div>
-    <div class="col-xl-4">
-        <div class="panel panel-inverse" data-sortable-id="index-3">
+    <div class="col-xl-4 ui-sortable">
+        <div class="panel panel-inverse" data-sortable-id="index-2">
             <!-- begin panel-heading -->
             <div class="panel-heading">
                 <h4 class="panel-title">Lampiran Berkas</h4>
