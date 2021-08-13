@@ -59,7 +59,7 @@ return [
                 'url' => '#',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Aduan'
             ],  [
-                'url' => '#',
+                'url' => '/kehilangan',
                 'title' => '<i class="fa fa-ellipsis-h"></i>&nbsp;Kehilangan Barang'
             ], [
                 'url' => '#',
