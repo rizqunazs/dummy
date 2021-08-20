@@ -22,6 +22,10 @@ class CreatePemohonTable extends Migration
             $table->date('tanggal_lahir');
             $table->bigInteger('pekerjaan_id');
             $table->bigInteger('agama_id');
+            $table->bigInteger('provinsi_id');
+            $table->bigInteger('kabupaten_id');
+            $table->bigInteger('kecamatan_id');
+            $table->bigInteger('kelurahan_id');
             $table->text('alamat');
             $table->string('no_telp');
             $table->string('email');

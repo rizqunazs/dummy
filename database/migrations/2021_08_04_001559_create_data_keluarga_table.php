@@ -19,6 +19,10 @@ class CreateDataKeluargaTable extends Migration
             $table->bigInteger('status_keluarga_id');
             $table->integer('umur')->nullable();
             $table->bigInteger('agama_id');
+            $table->bigInteger('provinsi_id');
+            $table->bigInteger('kabupaten_id');
+            $table->bigInteger('kecamatan_id');
+            $table->bigInteger('kelurahan_id');
             $table->text('alamat');
             $table->bigInteger('pekerjaan_id');
             $table->string('kebangsaan');
