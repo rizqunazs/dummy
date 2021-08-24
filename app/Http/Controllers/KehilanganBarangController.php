@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\DataTables\KehilanganDataTable;
-use App\Models\Kehilangan;
+use App\DataTables\KehilanganBarangDataTable;
+use App\Models\KehilanganBarang;
 use Illuminate\Http\Request;
 
-class KehilanganController extends Controller
+class KehilanganBarangController extends Controller
 {
 
-    public function index(KehilanganDataTable $datatable)
+    public function index(KehilanganBarangDataTable $datatable)
     {
         return $datatable->render('pages.spkt.kehilangan.index');
     }
@@ -30,7 +30,7 @@ class KehilanganController extends Controller
      * @param  \App\Models\Kehilangan  $kehilangan
      * @return \Illuminate\Http\Response
      */
-    public function show(Kehilangan $kehilangan)
+    public function show(KehilanganBarang $kehilangan)
     {
         //
     }
@@ -41,7 +41,7 @@ class KehilanganController extends Controller
      * @param  \App\Models\Kehilangan  $kehilangan
      * @return \Illuminate\Http\Response
      */
-    public function edit(Kehilangan $kehilangan)
+    public function edit(KehilanganBarang $kehilangan)
     {
         //
     }
@@ -53,7 +53,7 @@ class KehilanganController extends Controller
      * @param  \App\Models\Kehilangan  $kehilangan
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Kehilangan $kehilangan)
+    public function update(Request $request, KehilanganBarang $kehilangan)
     {
         //
     }
@@ -64,7 +64,7 @@ class KehilanganController extends Controller
      * @param  \App\Models\Kehilangan  $kehilangan
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kehilangan $kehilangan)
+    public function destroy(KehilanganBarang $kehilangan)
     {
         //
     }

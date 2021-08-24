@@ -2,14 +2,14 @@
 
 namespace App\DataTables;
 
-use App\Models\Kehilangan;
+use App\Models\KehilanganBarang;
 use Yajra\DataTables\Html\Button;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Html\Editor\Editor;
 use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
-class KehilanganDataTable extends DataTable
+class KehilanganBarangDataTable extends DataTable
 {
     /**
      * Build DataTable class.
@@ -39,7 +39,7 @@ class KehilanganDataTable extends DataTable
      * @param \App\App\Models\Kehilangan $model
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function query(Kehilangan $model)
+    public function query(KehilanganBarang $model)
     {
         return $model->newQuery();
     }
