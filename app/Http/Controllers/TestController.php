@@ -13,7 +13,8 @@ class TestController extends Controller
      */
     public function index()
     {
-        echo "index in controller";
+        $a= 'index in controller';
+        return view('test.index');
     }
 
     /**
