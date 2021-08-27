@@ -13,8 +13,10 @@ class TestController extends Controller
      */
     public function index()
     {
-        $a= 'index in controller';
-        return view('test.index');
+        $data= 'index in controller';
+        return view('test.index',[
+        'data'=>$data
+        ]);
     }
 
     /**
